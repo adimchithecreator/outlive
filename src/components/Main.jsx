@@ -4,16 +4,18 @@ import roman from '../images/roman.png'
 const main = () => {
   return (
     <>
-    <main className='w-full mt-5'>
+    <main className='md:grid md:grid-cols-3 mt-5'>
      
         
-        <div className=' pill bg-primary'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum ipsum, eum doloribus consequuntur reprehenderit nesciunt illum iste! Unde corporis veniam voluptatibus ducimus obcaecati? Aliquam, exercitationem! Obcaecati iure doloremque excepturi.
+        <div className=' '>
+            <div className="bg-primary text-white rounded-xl text-sm mx-2 ">
+            Lorem ipsum dolor sit amet consectetur adiploremloremkjihbdsafdsazx
+            </div>
  </div>
     <div className='' >
-<img src={roman} className="  border-2 border-dashed p-12 w-96 rounded-full " alt="White digital scale dispaying 650 " />
+<img src={roman} className="  border-2 border-dashed p-12  rounded-full " alt="White digital scale dispaying 650 " />
     </div>
-    <div> </div>
+    <div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae a eos eligendi harum quod quasi deleniti, numquam consequatur similique? Natus a cumque dolores beatae, exercitationem nostrum numquam reprehenderit sunt facere? </div>
     </main>
     </>
   )
