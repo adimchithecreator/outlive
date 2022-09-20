@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { motion } from "framer-motion";
 
 const Nav = () => {
   return (
-   <nav className=' flex justify-around mx-auto w-full mt-6  text-white'>
+   <nav className=' flex justify-around mx-auto w-full mt-6  text-primary'>
     <a className="   md:text-center font-extrabold lg:text-xl" href="#">OUTLIVE</a>
   
       <div>
@@ -17,7 +18,7 @@ const Nav = () => {
   <div>
   <a href="#"className='   md:text-center' >Contact</a>
   </div>
-  <div className=' bg-primary px-5 py-2'>
+  <div className='  px-5 '>
   <a href="#"className=' md:text-center' >Get The App</a>
   </div>
  
