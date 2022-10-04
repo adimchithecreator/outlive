@@ -1,9 +1,9 @@
-import Nav from "./components/Nav";
-import Main from "./components/Main";
+import Nav from "./components/pages/Nav";
+import Main from "./components/pages/Main";
 
 function App() {
   return (
-    <div className="App mx-20 ">
+    <div className="App bg-[#F8F8F8] ">
     <Nav/>
     <Main/>
     </div>
