@@ -11,3 +11,6 @@
     max-height: 29rem ;
 } 
 }
+.slick-list img{
+    width: 100%;
+}

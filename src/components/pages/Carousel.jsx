@@ -36,7 +36,7 @@ export default function Carousel() {
             <img src={gig} alt="psychedelic art" className='' />
           </div>
           <div>
-            <img src={sag} alt="" />
+            <img src={imust} alt="Hippie painting" />
           </div>
           <div className=' '>
             <img src={bret} alt="" />
