@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import logo from "../images/logo.png";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
@@ -9,9 +10,11 @@ const Nav = () => {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="javascript:void(0)">
-                            <h2 className="text-2xl font-bold uppercase">Outlive</h2>
-                        </a>
+                      <a href="medium.com" className=' flex items-center'>
+                   <img src={logo} alt="Hemp addiction by Jake Warrilow" className=" w-20" />
+                   <span className=" self-center whitespace-nowrap font-bold"> UPLIVE </span>
+                   </a>
+                    
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
