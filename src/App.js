@@ -4,10 +4,10 @@ import Card
  from "./components/pages/Card";
 function App() {
   return (
-    <div className="App bg-[#F8F8F8] ">
+    <div className="App bg-primary">
     <Nav/>
     <Main/>
-    <Card/>
+
     </div>
   );
 }

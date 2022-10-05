@@ -66,7 +66,7 @@ const Nav = () => {
                             <li className=" hover:text-primary">
                                 <a href="javascript:void(0)">Contact</a>
                             </li>
-                            <li className=" hover:text-primary py-2 px-4 rounded-full border-primary text-white bg-primary border-2 hover:bg-white">
+                            <li className=" hover:text-primary py-2 px-4 rounded-md border-black  border-2">
                                 <a href="javascript:void(0)">Get the App</a>
                             </li>
                         </ul>

@@ -20,7 +20,7 @@ export default function Carousel() {
       };
 
       return (
-        <div className=' mt-5'>
+        <div className=' my-12'>
         <Slider {...settings} className="">
         
           <div>
