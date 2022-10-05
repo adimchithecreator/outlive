@@ -1,8 +1,9 @@
 import React from 'react';
 import matt from '../images/matthew.png'
 import { Disclosure } from '@headlessui/react'
-import Panel from './Panel';
+import Carousel from './Carousel';
 import '../styles/Main.css'
+
 
 const main = () => {
   return (
@@ -26,7 +27,7 @@ const main = () => {
       </Disclosure.Panel>
     </Disclosure>
     </div>
- <Panel/>
+<Carousel/>
     </>
   )
 }

@@ -1,0 +1,13 @@
+@media (max-width:640px) {
+    
+.slick-list{
+    max-height: 14rem ;
+}
+}
+
+@media (min-width:1024px) {
+       
+.slick-list{
+    max-height: 29rem ;
+} 
+}
