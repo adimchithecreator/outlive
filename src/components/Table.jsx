@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Tab } from '@headlessui/react';
 import bong from './images/bong.png';
 import gas from './images/gas.png'
-import edd from './images/edd.png'
+import yum from './images/yum.png'
 
 
 function classNames(...classes) {
@@ -32,13 +32,13 @@ const Table = () => {
             id: 1,
             pli: 4,
             title: 'Ask Me Anything: 10 answers to your questions about coffee',
-            image: edd,
+            image: yum,
           },
          
         ],
       })
       return (
-        <div className="w-full max-w-md px-12  sm:px-0">
+        <div className="w-full max-w-md px-12 bg-white  sm:px-0">
           <Tab.Group>
             <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
               {Object.keys(categories).map((category) => (

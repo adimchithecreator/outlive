@@ -2,7 +2,7 @@ import React from 'react';
 import Master from "./Master";
 
 import holi from './images/holi.png'
-
+import Content from './Content';
 import rob from './images/rob.png'
 import { Disclosure } from '@headlessui/react'
 import Carousel from './Carousel';
@@ -39,6 +39,8 @@ const main = () => {
     </Disclosure>
     </div>
 <Master/>
+<Content/>
+<Carousel/>
     </>
   )
 }
