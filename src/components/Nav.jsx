@@ -13,7 +13,7 @@ const Nav = () => {
                       <a href="medium.com" className=' flex items-center'>
                    <img src={logo} alt="Mr Nuggs and Friends by iqbal hakim boo
 " className=" w-20" />
-                   <span className=" self-center whitespace-nowrap font-bold"> UPLIVE </span>
+                   <span className=" self-center whitespace-nowrap font-bold tracking-wider"> UPLIVE </span>
                    </a>
                     
                         <div className="md:hidden">
@@ -60,7 +60,7 @@ const Nav = () => {
                             navbar ? "block" : "hidden"
                         }`}
                     >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 tracking-wider">
                             <li className=" ">
                                 <a href="/">Home</a>
                             </li>
