@@ -61,16 +61,16 @@ const Nav = () => {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className=" hover:text-primary">
+                            <li className=" ">
                                 <a href="/">Home</a>
                             </li>
-                            <li className=" hover:text-primary">
+                            <li className=" ">
                                 <a href="/Product">Product</a>
                             </li>
-                            <li className=" hover:text-primary">
+                            <li className=" ">
                                 <a href="/contact">Contact</a>
                             </li>
-                            <li className=" hover:text-primary py-2 px-4 rounded-md border-black  border-2">
+                            <li className="  py-2 px-4 rounded-md border-black  border-2">
                                 <a href="/GetApp">Get the App</a>
                             </li>
                         </ul>

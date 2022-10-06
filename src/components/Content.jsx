@@ -8,10 +8,9 @@ import { Disclosure } from '@headlessui/react'
 
 const Content = () => {
   return (
-    <div className=' grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-12'>
+    <div className='relative grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-12'>
         <div className='weed  drop-shadow-2xl'>
 <img src={yum} alt="" className='mx-auto mt-24' />
-
 
 </div>
 <div className='weed drop-shadow-2xl'>
@@ -23,7 +22,7 @@ const Content = () => {
 
 </div>
 <div className='weed drop-shadow-2xl'>
-<img src={indi} alt="" className=' mt-24'  />
+<img src={indi} alt="" className=' mt-16'  />
 
 </div>
     </div>

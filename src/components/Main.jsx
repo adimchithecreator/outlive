@@ -19,7 +19,7 @@ const main = () => {
   <p className='text-center  p-5 text-xl '>High Grade. Indica. Sativa. Hybrid.</p>
   
 </div>
-<div className=''>
+<div className=' shadow-2xl'>
 <img src={holi} alt="" className='drop-shadow-2xl w-1/5 absolute md:top-28 md:block   animate-bounce top-16' />
 
 <img src={rob} alt="" className='md:block drop-shadow-2xl w-1/4 absolute lg:top-32 md:top-32 animate-bounce  top-16 right-1  '  />
