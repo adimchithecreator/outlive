@@ -1,12 +1,12 @@
 import React from 'react';
-import sag from '../images/sag.jpeg'
-import bret from '../images/bret.jpeg'
-import gig from '../images/gig.jpeg'
-import red from '../images/red.jpeg'
-import whirl from '../images/whirl.jpeg'
-import imust from '../images/imust.jpeg'
+import sag from './images/sag.jpeg'
+import bret from './images/bret.jpeg'
+import gig from './images/gig.jpeg'
+import red from './images/red.jpeg'
+import whirl from './images/whirl.jpeg'
+import imust from './images/imust.jpeg'
 import Slider from "react-slick";
-import '../styles/Carousel.css'
+import './styles/Carousel.css'
 
 export default function Carousel() {
     let settings = {
@@ -16,11 +16,12 @@ export default function Carousel() {
         slidesToShow: 1,
         autoplay: true,
   autoplaySpeed: 1500,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+       arrows:false
       };
 
       return (
-        <div className=' my-12'>
+        <div className=''>
         <Slider {...settings} className="">
         
           <div>

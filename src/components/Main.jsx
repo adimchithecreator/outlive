@@ -1,9 +1,13 @@
 import React from 'react';
-import rob from '../images/rob.png'
-import holi from '../images/holi.png'
+import Master from "./Master";
+
+import holi from './images/holi.png'
+
+import rob from './images/rob.png'
 import { Disclosure } from '@headlessui/react'
 import Carousel from './Carousel';
-import '../styles/Main.css'
+import Table from './Table';
+import './styles/Main.css'
 
 
 const main = () => {
@@ -16,9 +20,9 @@ const main = () => {
   
 </div>
 <div className=''>
-<img src={holi} alt="" className=' w-1/5 absolute md:top-28   animate-bounce top-16' />
+<img src={holi} alt="" className='drop-shadow-2xl w-1/5 absolute md:top-28 md:block   animate-bounce top-16' />
 
-<img src={rob} alt="" className=' w-1/4 absolute lg:top-32 md:top-32 animate-bounce  top-16 right-1  '  />
+<img src={rob} alt="" className='md:block drop-shadow-2xl w-1/4 absolute lg:top-32 md:top-32 animate-bounce  top-16 right-1  '  />
 
  
 </div>
@@ -34,7 +38,7 @@ const main = () => {
       </Disclosure.Panel>
     </Disclosure>
     </div>
-<Carousel/>
+<Master/>
     </>
   )
 }

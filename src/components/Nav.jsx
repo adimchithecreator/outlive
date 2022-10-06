@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import logo from "../images/logo.png";
+import logo from "./images/logo.png";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
@@ -11,7 +11,8 @@ const Nav = () => {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                       <a href="medium.com" className=' flex items-center'>
-                   <img src={logo} alt="Hemp addiction by Jake Warrilow" className=" w-20" />
+                   <img src={logo} alt="Mr Nuggs and Friends by iqbal hakim boo
+" className=" w-20" />
                    <span className=" self-center whitespace-nowrap font-bold"> UPLIVE </span>
                    </a>
                     
@@ -61,16 +62,16 @@ const Nav = () => {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className=" hover:text-primary">
-                                <a href="javascript:void(0)">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li className=" hover:text-primary">
-                                <a href="javascript:void(0)">Product</a>
+                                <a href="/Product">Product</a>
                             </li>
                             <li className=" hover:text-primary">
-                                <a href="javascript:void(0)">Contact</a>
+                                <a href="/contact">Contact</a>
                             </li>
                             <li className=" hover:text-primary py-2 px-4 rounded-md border-black  border-2">
-                                <a href="javascript:void(0)">Get the App</a>
+                                <a href="/GetApp">Get the App</a>
                             </li>
                         </ul>
                     </div>
