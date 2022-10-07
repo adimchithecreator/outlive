@@ -1,25 +1,24 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
+import React from 'react'
+import flower from './images/flower.png'
 
-export default function Card() {
-  let [isOpen, setIsOpen] = useState(true)
-
+const Card = () => {
   return (
-    <Dialog open={isOpen} onClose={() => setIsOpen(false)}>
-      <Dialog.Panel>
-        <Dialog.Title>Deactivate account</Dialog.Title>
-        <Dialog.Description>
-          This will permanently deactivate your account
-        </Dialog.Description>
-
-        <p>
-          Are you sure you want to deactivate your account? All of your data
-          will be permanently removed. This action cannot be undone.
-        </p>
-
-        <button onClick={() => setIsOpen(false)}>Deactivate</button>
-        <button onClick={() => setIsOpen(false)}>Cancel</button>
-      </Dialog.Panel>
-    </Dialog>
+    <div>
+       <div className='bg-black mt-32 lg:p-5 flex flex-col md:flex-row'>
+         <div className='w-full md:w-1/2 '>
+    <img src={flower} alt="Happy by Manuel Cetina" />
+    </div>
+        <div className='md:w-1/2 mt-16 lg:p-12 w-full p-5 text-white  '>
+    <h2 className='text-5xl '>You know what time is it!</h2>
+    {/* From flowery.co */}
+    <p className=' note py-10'>
+    We’re here to shed light on the often confusing world of cannabis. Because we believe that this incredible plant holds the potential to not only help relieve chronic medical issues, but also be a part of one’s everyday wellness routine. No matter what effect you’re after, we are dedicated to helping you unlock all the benefits the cannabis plant can provide.
+</p>
+    </div>
+  
+    </div>
+    </div>
   )
 }
+
+export default Card

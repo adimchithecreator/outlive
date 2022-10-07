@@ -1,6 +1,6 @@
 import React from 'react';
 import Master from "./Master";
-
+import Card from './Card';
 import holi from './images/holi.png'
 import Content from './Content';
 import rob from './images/rob.png'
@@ -31,7 +31,7 @@ const main = () => {
 
  <Disclosure  >
       <Disclosure.Button className="bg-black p-3  text-white w-40 rounded-lg ">
-      Shop strains
+      Coming soon
       </Disclosure.Button>
       <Disclosure.Panel className="pt-2">
     Highest quality CBD
@@ -40,7 +40,7 @@ const main = () => {
     </div>
 <Master/>
 <Content/>
-<Table/>
+<Card/>
 <Carousel/>
     </>
   )
