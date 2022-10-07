@@ -5,7 +5,6 @@ import indi from './images/indi.png'
 import rose from './images/rose.png'
 import './styles/Content.css'
 import { Disclosure } from '@headlessui/react'
-import { useState } from 'react'
 
 const Content = () => {
 
@@ -82,7 +81,7 @@ const Content = () => {
   </div>
       </Disclosure.Button>
       <Disclosure.Panel className="">
-      <span>THC - 18% </span>
+      <span>THC - 8% || CBD - 12% </span>
       </Disclosure.Panel>
     </Disclosure>
     </div>

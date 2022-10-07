@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Tab } from '@headlessui/react';
 import bong from './images/bong.png';
 import gas from './images/gas.png'
-import yum from './images/yum.png'
+import jack from './images/jack.png'
 
 
 function classNames(...classes) {
@@ -29,16 +29,15 @@ const Table = () => {
         ],
         Trending: [
           {
-            id: 1,
-            pli: 4,
+          
             title: 'Ask Me Anything: 10 answers to your questions about coffee',
-            image: yum,
+            image: jack,
           },
          
         ],
       })
       return (
-        <div className="w-full max-w-md px-12 bg-white  sm:px-0">
+        <div className=" w-full px-12 bg-white  sm:px-0">
           <Tab.Group>
             <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
               {Object.keys(categories).map((category) => (
@@ -79,17 +78,13 @@ const Table = () => {
                         <img src={post.image} alt="hy" />
  
                         
-                        <a
-                          href="#"
-                          className={classNames(
-                            'absolute inset-0 rounded-md',
-                            'ring-blue-400 focus:z-10 focus:outline-none focus:ring-2'
+                        <a href="#"
+                          className={classNames( 'absolute inset-0 rounded-md','ring-blue-400 focus:z-10 focus:outline-none focus:ring-2'
                           )}
                         />
                       </li>
                     ))}
                   </ul>
-             
                 </Tab.Panel>
               ))}
             </Tab.Panels>
@@ -97,9 +92,4 @@ const Table = () => {
         </div>
       )
     }
-  
-    
-  
-
-
 export default Table

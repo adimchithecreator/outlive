@@ -40,6 +40,7 @@ const main = () => {
     </div>
 <Master/>
 <Content/>
+<Table/>
 <Carousel/>
     </>
   )
