@@ -7,6 +7,7 @@ import rob from './images/rob.png'
 import { Disclosure } from '@headlessui/react'
 import Carousel from './Carousel';
 import Table from './Table';
+import { motion } from 'framer-motion';
 import './styles/Main.css'
 
 
@@ -27,10 +28,10 @@ const main = () => {
  
 </div>
  </div>
- <div className="cta text-center mx-auto bg-zinc-200 w-48 p-2  rounded-lg">
+ <div className="cta text-center mx-auto bg-white w-48 p-2  rounded-lg">
 
  <Disclosure  >
-      <Disclosure.Button className="bg-black p-3  text-white w-40 rounded-lg ">
+      <Disclosure.Button className="bg-secondary p-3  text-primary w-40 rounded-lg ">
       Coming soon
       </Disclosure.Button>
       <Disclosure.Panel className="pt-2">

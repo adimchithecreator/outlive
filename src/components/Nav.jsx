@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import logo from "./images/logo.png";
 import './styles/Nav.css'
 
@@ -62,18 +63,18 @@ const Nav = () => {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 tracking-wider">
-                            <li className=" ">
+                            <motion.li className=" "  whileHover={{ scale: 1.3 }}>
                                 <a href="/">Home</a>
-                            </li>
-                            <li className=" ">
+                            </motion.li>
+                            <motion.li className=" "  whileHover={{ scale: 1.3 }}>
                                 <a href="/Product">Product</a>
-                            </li>
-                            <li className=" ">
+                            </motion.li>
+                            <motion.li className=" "  whileHover={{ scale: 1.3 }}>
                                 <a href="/contact">Contact</a>
-                            </li>
-                            <li className="  py-2 px-4 rounded-md border-black  border-2">
+                            </motion.li>
+                            <motion.li className="  py-2 px-4 rounded-md border-black  border-2"  whileHover={{ scale: 1.3 }}>
                                 <a href="/GetApp">Get the App</a>
-                            </li>
+                            </motion.li>
                         </ul>
                     </div>
                 </div>
