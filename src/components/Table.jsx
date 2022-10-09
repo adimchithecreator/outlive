@@ -16,27 +16,28 @@ const Table = () => {
         Recent: [
           {
            image: gas,
+           title: 'Uncle '
           },
         
         ],
         Popular: [
           {
-            id: 1,
-            title: 'Is tech making coffee better or worse?',
-            image: bong,
+            title : 'Resident Baddie',
+           image: bong,
           },
           
         ],
         Trending: [
           {
           
-            title: 'Ask Me Anything: 10 answers to your questions about coffee',
-            image: jack,
+           image: jack,
           },
          
         ],
       })
       return (
+        <>
+        <h2 className="text-3xl bg-white"> Meet the Team</h2>
         <div className=" w-full px-12 bg-white  sm:px-0">
           <Tab.Group>
             <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
@@ -46,7 +47,7 @@ const Table = () => {
                   className={({ selected }) =>
                     classNames(
                       'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700',
-                      'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                      'ring-white ring-opacity-60 ring-offset-2  focus:outline-none focus:ring-2',
                       selected
                         ? 'bg-white shadow'
                         : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
@@ -61,35 +62,25 @@ const Table = () => {
               {Object.values(categories).map((posts, idx) => (
                 <Tab.Panel
                   key={idx}
-                  className={classNames(
-                    'rounded-xl bg-white p-3',
-                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
-                  )}
+                  className={classNames('rounded-xl bg-white p-3', 'ring-white ring-opacity-60 ring-offset-2  focus:outline-none focus:ring-2' )}
                 >
-                  <ul>
+                
                     {posts.map((post) => (
-                      <li
-                        key={post.id}
-                        className="relative rounded-md p-3 hover:bg-gray-100"
-                      >
-                        <h3 className="text-sm font-medium leading-5">
-                          {post.pli}
-                        </h3>
+                    
+                   
+                       
                         <img src={post.image} alt="hy" />
  
-                        
-                        <a href="#"
-                          className={classNames( 'absolute inset-0 rounded-md','ring-blue-400 focus:z-10 focus:outline-none focus:ring-2'
-                          )}
-                        />
-                      </li>
+                 
+             
                     ))}
-                  </ul>
+      
                 </Tab.Panel>
               ))}
             </Tab.Panels>
           </Tab.Group>
         </div>
+        </>
       )
     }
 export default Table

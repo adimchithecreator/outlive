@@ -14,7 +14,11 @@ import './styles/Main.css'
 const main = () => {
   return (
     <>
- <div className='flex flex-col relative m-auto'>
+ <div className='flex flex-col relative m-auto'
+//   initial={{ x: '-100vw'}}
+//  animate={{ x: 0 }}
+//  transition={{ tyoe: 'spring', duration: 1, bounce: 0.3}} 
+>
 <div className=' info'>
   <h1 className=' text-2xl px-12 md:text-5xl tracking-wider  capitalize font-bold text-center lg:px-36 pt-20 lg:pt-36 text-secondary '>The grass is always green </h1>
   <p className='text-center  p-5 text-xl '>High Grade. Indica. Sativa. Hybrid.</p>
@@ -42,6 +46,7 @@ const main = () => {
 <Master/>
 <Content/>
 <Card/>
+<Table/>
 <Carousel/>
     </>
   )
