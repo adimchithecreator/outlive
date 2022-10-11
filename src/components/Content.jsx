@@ -1,17 +1,18 @@
-import React from 'react'
-import yum from './images/yum.png'
-import thc from './images/thc.png'
-import indi from './images/indi.png'
-import rose from './images/rose.png'
-import './styles/Content.css'
-import { Disclosure } from '@headlessui/react'
+import React from 'react';
+import yum from './images/yum.png';
+import thc from './images/thc.png';
+import indi from './images/indi.png';
+import rose from './images/rose.png';
+import './styles/Content.css';
+import { motion } from 'framer-motion';
+import { Disclosure } from '@headlessui/react';
 
 const Content = () => {
 
   return (
     
     <div className='relative grid gap-4 md:grid-cols-2 lg:grid-cols-4 p-12'>
-        <div className='weed  drop-shadow-2xl'>
+        <motion.div className='weed  drop-shadow-2xl' whileHover={{ scale: 1.1 }}>
 <img src={yum} alt="" className='mx-auto mt-24' />
 <div className="  text-white mx-5 mb-5 rounded-lg px-3 bg-green-900 w-48">
 <Disclosure>
@@ -29,8 +30,8 @@ const Content = () => {
       </Disclosure.Panel>
     </Disclosure>
     </div>
-</div>
-<div className='weed drop-shadow-2xl'>
+</motion.div>
+<motion.div className='weed drop-shadow-2xl' whileHover={{ scale: 1.1 }} >
 <img src={rose} alt="" className=' mt-20'  />
 <div className="text-white mx-5 mb-5 rounded-lg px-3 bg-green-900 w-48">
 <Disclosure>
@@ -48,8 +49,8 @@ const Content = () => {
       </Disclosure.Panel>
     </Disclosure>
     </div>
-</div>
-<div className='weed drop-shadow-2xl'>
+</motion.div>
+<motion.div className='weed drop-shadow-2xl' whileHover={{ scale: 1.1 }}>
 <img src={thc} alt="" className=' mt-20' />
 <div className="text-white mx-5 mb-5 rounded-lg px-3 bg-green-900 w-48">
 <Disclosure>
@@ -66,9 +67,9 @@ const Content = () => {
       </Disclosure.Panel>
     </Disclosure>
     </div>
-</div>
+</motion.div>
 
-<div className='weed drop-shadow-2xl'>
+<motion.div className='weed drop-shadow-2xl' whileHover={{ scale: 1.1 }}>
 <img src={indi} alt="" className=''  />
 <div className="text-white mx-5 mb-5 rounded-lg px-3 bg-green-900 w-48">
 <Disclosure>
@@ -85,7 +86,7 @@ const Content = () => {
       </Disclosure.Panel>
     </Disclosure>
     </div>
-</div>
+</motion.div>
 
     </div>
   )
