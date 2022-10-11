@@ -1,21 +1,45 @@
 import React from 'react'
 import flower from './images/flower.png'
-import { motion, useScroll } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+
 
 
 const Card = () => {
+
+  const {ref, inView} = useInView({
+    threshold: 0.2
+  });
+const animation = useAnimation()
+
+  useEffect(() => {
+   if (inView){
+    animation.start({
+      y: 0,
+      transition:{
+        type: 'spring', duration: 1, bounce: 0.2, delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01]
+      }
+    });
+   }
+   if (!inView){
+    animation.start({
+      y: '-700vh',
+      
+    })
+   }
+  } );
+
   return (
     <div>
        <div className='bg-black mt-32 lg:p-5 flex flex-col md:flex-row'>
-         <div className='w-full md:w-1/2 '>
+         <div ref={ref} className='w-full md:w-1/2 '>
     <motion.img src={flower} alt="Happy by Manuel Cetina" 
-    initial={{ opacity: 0.1, scale: 0.5, y:'-100vw' }}
-     animate={{ opacity: 1, scale: 1, y: 0 }}
-     transition={{
-       duration: 1,
-       delay: 0.5,
-       ease: [0, 0.71, 0.2, 1.01]
-     }}/>
+
+     animate={animation}
+    
+     />
     </div>
         <motion.div className='md:w-1/2 mt-16 lg:p-12 w-full p-5 text-white'
         initial={{ opacity: 0.1, scale: 0.5, x:'100vw' }}

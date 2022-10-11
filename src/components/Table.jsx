@@ -40,7 +40,7 @@ const Table = () => {
         <h2 className="text-3xl bg-white"> Meet the Team</h2>
         <div className=" w-full px-12 bg-white  sm:px-0">
           <Tab.Group>
-            <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+            <Tab.List className="flex space-x-1 rounded-xl w-full p-1">
               {Object.keys(categories).map((category) => (
                 <Tab
                   key={category}
@@ -50,10 +50,7 @@ const Table = () => {
                       'ring-white ring-opacity-60 ring-offset-2  focus:outline-none focus:ring-2',
                       selected
                         ? 'bg-white shadow'
-                        : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
-                    )
-                  }
-                >
+                        : 'text-blue-100 ')}>
                   {category}
                 </Tab>
               ))}
@@ -62,18 +59,8 @@ const Table = () => {
               {Object.values(categories).map((posts, idx) => (
                 <Tab.Panel
                   key={idx}
-                  className={classNames('rounded-xl bg-white p-3', 'ring-white ring-opacity-60 ring-offset-2  focus:outline-none focus:ring-2' )}
-                >
-                
-                    {posts.map((post) => (
-                    
-                   
-                       
-                        <img src={post.image} alt="hy" />
- 
-                 
-             
-                    ))}
+                  className={classNames('rounded-xl bg-white p-3', 'ring-white ring-opacity-60 ring-offset-2  focus:outline-none focus:ring-2' )}>
+ {posts.map((post) => ( <img src={post.image} alt="hy" /> ))}
       
                 </Tab.Panel>
               ))}
