@@ -7,6 +7,7 @@ import rob from './images/rob.png'
 import { Disclosure } from '@headlessui/react'
 import Carousel from './Carousel';
 import Table from './Table';
+import Coming from './Coming';
 import './styles/Main.css'
 
 
@@ -42,6 +43,7 @@ const main = () => {
 <Content/>
 <Card/>
 <Table/>
+<Coming/>
 <Carousel/>
     </>
   )
