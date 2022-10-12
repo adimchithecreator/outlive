@@ -19,14 +19,14 @@ const animation = useAnimation()
         duration: 1,
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
-        opacity: 0
+        opacity: 0.0
       }
     });
    }
    if (!inView){
     animation.start({
       y: '-500vh',
-    
+      opacity: 1
     })
    }
   } );

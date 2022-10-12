@@ -6,6 +6,7 @@ import rose from './images/rose.png';
 import './styles/Content.css';
 import { motion } from 'framer-motion';
 import { Disclosure } from '@headlessui/react';
+import { InformationCircleIcon } from '@heroicons/react/24/outline';
 
 const Content = () => {
 
@@ -18,9 +19,7 @@ const Content = () => {
 <Disclosure>
       <Disclosure.Button className="py-2">
       <div className='flex items-center'>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 mr-1 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-</svg>
+<InformationCircleIcon className='w-6 mr-1 h-6'/>
 
 <span className=' tracking-widest'>Mary joe</span>
   </div>
@@ -37,9 +36,7 @@ const Content = () => {
 <Disclosure>
       <Disclosure.Button className="py-2">
       <div className='flex items-center'>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 mr-1 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-</svg>
+      <InformationCircleIcon className='w-6 mr-1 h-6'/>
 
 <span className=' tracking-widest'>Wedding cake </span>
   </div>
@@ -56,9 +53,7 @@ const Content = () => {
 <Disclosure>
       <Disclosure.Button className="py-2">
       <div className='flex items-center'>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 mr-1 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-</svg>
+      <InformationCircleIcon className='w-6 mr-1 h-6'/>
 <span className=' tracking-widest'>Krabs</span>
   </div>
       </Disclosure.Button>
@@ -75,9 +70,8 @@ const Content = () => {
 <Disclosure>
       <Disclosure.Button className="py-2">
       <div className='flex items-center'>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 mr-1 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
-</svg>
+
+      <InformationCircleIcon className='w-6 mr-1 h-6'/>
 <span className=' tracking-widest'>Snell</span>
   </div>
       </Disclosure.Button>
