@@ -8,7 +8,7 @@ const Coming = () => {
     Coming soon to a dispensary near you!
 </div>
    <div className=" md:w-1/2">
-    <img src={simon} alt="" className=' h-full' />
+    <img src={simon} alt="" className='' />
    </div>
     </div>
   )
