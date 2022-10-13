@@ -8,6 +8,7 @@ import { Disclosure } from '@headlessui/react'
 import Carousel from './Carousel';
 import Table from './Table';
 import Coming from './Coming';
+import Footer from './FooterS';
 import './styles/Main.css'
 
 
@@ -21,9 +22,9 @@ const main = () => {
   
 </div>
 <div className=' shadow-2xl'>
-<img src={holi} alt="" className='drop-shadow-2xl w-1/5 absolute md:top-28 md:block   animate-bounce top-16' />
+<img src={holi} alt="" className=' hidden drop-shadow-2xl w-1/5 absolute md:top-28 md:block   animate-bounce top-16' />
 
-<img src={rob} alt="" className='md:block drop-shadow-2xl w-1/4 absolute lg:top-32 md:top-32 animate-bounce  top-16 right-1  '  />
+<img src={rob} alt="" className='md:block hidden drop-shadow-2xl w-1/4 absolute lg:top-32 md:top-32 animate-bounce  top-16 right-1  '  />
 
  
 </div>
@@ -45,6 +46,7 @@ const main = () => {
 <Table/>
 <Coming/>
 <Carousel/>
+<Footer/>
     </>
   )
 }
