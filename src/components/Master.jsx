@@ -14,7 +14,7 @@ const animation = useAnimation()
   useEffect(() => {
    if (inView){
     animation.start({
-      y: 0,
+      x: 0,
       transition:{
         duration: 1,
         delay: 0.5,
@@ -25,7 +25,7 @@ const animation = useAnimation()
    }
    if (!inView){
     animation.start({
-      y: '-500vh',
+      x: '100vw',
       opacity: 1
     })
    }
