@@ -10,9 +10,9 @@ const Table = () => {
       <h1 className="text-5xl text-center my-12"> Meet the Team</h1>
        <Tab.Group >
       <Tab.List  className='flex justify-around text-white  bg-secondary'>
-        <Tab className= '  ui-selected:ring-secondary/50 ui-selected:ring-inset rounded-lg ui-selected:px-10 md:px-20  px-5 py-2.5 ui-selected:rounded-xl hover:bg-primary/50 hover:text-primary ui-selected:text-secondary  ui-selected:bg-primary'> Mr Jamal</Tab>
-        <Tab className='  ui-selected:ring-secondary/50 ui-selected:ring-inset  px-5 ui-selected:px-10 md:px-20 rounded-lg py-2.5 ui-selected:rounded-xl ui-selected:text-secondary hover:bg-primary/50 hover:text-primary ui-selected:bg-primary'>Miss Bong</Tab>
-        <Tab  className= ' ui-selected:ring-secondary/50 ui-selected:ring-inset rounded-lg md:px-20 ui-selected:px-10 px-5 py-2.5 ui-selected:rounded-xl ui-selected:text-secondary hover:bg-primary/50 hover:text-primary ui-selected:bg-primary'>Dr. Jack</Tab>
+        <Tab className= '  ui-selected:ring-secondary/50  rounded-lg ui-selected:px-10 md:px-20  px-5 py-2.5 ui-selected:rounded-xl hover:bg-primary/50 hover:text-primary ui-selected:text-secondary  ui-selected:bg-primary'> Mr Jamal</Tab>
+        <Tab className='  ui-selected:ring-secondary/50  px-5 ui-selected:px-10 md:px-20 rounded-lg py-2.5 ui-selected:rounded-xl ui-selected:text-secondary hover:bg-primary/50 hover:text-primary ui-selected:bg-primary'>Miss Bong</Tab>
+        <Tab  className= ' ui-selected:ring-secondary/50  rounded-lg md:px-20 ui-selected:px-10 px-5 py-2.5 ui-selected:rounded-xl ui-selected:text-secondary hover:bg-primary/50 hover:text-primary ui-selected:bg-primary'>Dr. Jack</Tab>
       </Tab.List>
       <Tab.Panels  className='flex justify-around'>
       <Tab.Panel className=' drop-shadow-2xl'> <img src={gas}/>
