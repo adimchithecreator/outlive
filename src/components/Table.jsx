@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab, Disclosure } from '@headlessui/react';
+import { Tab} from '@headlessui/react';
 import jack from './images/jack.png';
 import bong from './images/bong.png';
 import gas from './images/gas.png';
