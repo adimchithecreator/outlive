@@ -8,7 +8,6 @@ import { Disclosure } from '@headlessui/react'
 import Carousel from './Carousel';
 import Table from './Table';
 import Coming from './Coming';
-import Footer from './FooterS';
 import './styles/Main.css'
 
 
@@ -46,7 +45,6 @@ const main = () => {
 <Table/>
 <Coming/>
 <Carousel/>
-<Footer/>
     </>
   )
 }

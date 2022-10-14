@@ -11,11 +11,11 @@ const Table = () => {
        <Tab.Group >
       <Tab.List  className='flex justify-around text-white  bg-secondary'>
         <Tab className= '  ui-selected:ring-secondary/50  rounded-lg ui-selected:px-10 md:px-20  px-5 py-2.5 ui-selected:rounded-xl hover:bg-primary/50 hover:text-primary ui-selected:text-secondary  ui-selected:bg-primary'> Mr Jamal</Tab>
-        <Tab className='  ui-selected:ring-secondary/50  px-5 ui-selected:px-10 md:px-20 rounded-lg py-2.5 ui-selected:rounded-xl ui-selected:text-secondary hover:bg-primary/50 hover:text-primary ui-selected:bg-primary'>Miss Bong</Tab>
+        <Tab className='  ui-selected:ring-secondary/50 px-5 ui-selected:px-10 md:px-20 rounded-lg py-2.5 ui-selected:rounded-xl ui-selected:text-secondary hover:bg-primary/50 hover:text-primary ui-selected:bg-primary'>Miss Bong</Tab>
         <Tab  className= ' ui-selected:ring-secondary/50  rounded-lg md:px-20 ui-selected:px-10 px-5 py-2.5 ui-selected:rounded-xl ui-selected:text-secondary hover:bg-primary/50 hover:text-primary ui-selected:bg-primary'>Dr. Jack</Tab>
       </Tab.List>
       <Tab.Panels  className='flex justify-around'>
-      <Tab.Panel className=' drop-shadow-2xl'> <img src={gas}/>
+      <Tab.Panel className=' drop-shadow-2xl'> <img src={gas} alt='animated green gas dispenser smoking'/>
       <div className=" text-center mb-4"> <h2>Resident Farmer - Mr jamal </h2>
         <ul className=' mx-3 list-disc list-inside'> 
           <li> Grows high grade indica, sativa and hybrid.</li>
@@ -33,7 +33,7 @@ const Table = () => {
             </ul>
              </div>
         </Tab.Panel>
-        <Tab.Panel> <img src={jack}/>
+        <Tab.Panel> <img src={jack} alt='animated yellow lighter with red eyes and hair'/>
         <div className=" text-center mb-4"> 
         <h2>Resident Doctor - Doctor Jack </h2>
         <ul className=' mx-3 list-disc list-inside'> 
